@@ -1,0 +1,108 @@
+$primary:hsl(259, 100%, 65%);
+$Light-red: hsl(0, 100%, 67%);
+$White: hsl(0, 0%, 100%);
+$Off-white: hsl(0, 0%, 94%);
+$Light-grey: hsl(0, 0%, 86%);
+$Smokey-grey: hsl(0, 1%, 44%);
+$Off-black: hsl(0, 0%, 8%);
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: hsl(0, 0%, 94%);
+}
+main{
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    margin-top: 10%;
+    min-width: 50%;
+    max-width: 500px;
+    padding: 35px;
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+    .form-group{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        label{
+            display: block;
+            margin: 10px;
+            font-weight: 600;
+            font-size: 20px;
+            color: hsl(0, 1%, 44%);
+            &.error{
+                color:  hsl(0, 100%, 67%);
+            }
+        }
+        input{
+            padding:25px 10px 20px;
+            
+            border-radius: 5px;
+            border: 0.5px solid hsl(0, 0%, 86%);
+            margin: 10px;
+            &::placeholder{
+                font-weight: bold;
+                font-size: 32px;
+                color: hsl(0, 1%, 50%);
+            }
+            &.error{
+                border: 0.5px solid hsl(0, 100%, 67%);
+            }
+            @media (max-width:500px) {
+                max-width: 70px;
+                padding:10px ;
+                &::placeholder{
+                    font-size: 18px;
+                }
+            }
+        }
+     
+    }
+    button{
+        border-radius: 50%;
+        border: none;
+        svg{
+            background-color: hsl(259, 100%, 65%);
+            border-radius: 50%;
+            padding: 10px;
+            path{
+
+                fill: hsl(259, 100%, 65%);
+            }
+        }
+    }
+}
+.msg{
+    color: hsl(0, 100%, 67%);
+    margin: 5px 10px;
+}
+p{
+    span{
+        font-weight: 900;
+        font-style: italic;
+        font-size: 80px;
+        color:hsl(0, 0%, 8%);
+        &#months,&#days,&#years{
+            color: hsl(259, 100%, 65%);
+        }
+        @media (max-width:500px) {
+            font-size: 40px;
+        }
+    }
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.divider{
+    width: 90%;
+    height: 1px;
+    background-color: hsl(0, 0%, 86%);
+    margin: 20px 10px;
+    margin-right: 0;
+}

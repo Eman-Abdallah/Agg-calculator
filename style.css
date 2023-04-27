@@ -1,0 +1,113 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  margin: auto;
+  margin-top: 10%;
+  min-width: 50%;
+  max-width: 500px;
+  padding: 35px;
+  border-radius: 20px;
+  border-bottom-right-radius: 100px;
+}
+main .form-group {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+main .form-group label {
+  display: block;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: hsl(0, 1%, 44%);
+}
+main .form-group label.error {
+  color: hsl(0, 100%, 67%);
+}
+main .form-group input {
+  padding: 25px 10px 20px;
+  border-radius: 5px;
+  border: 0.5px solid hsl(0, 0%, 86%);
+  margin: 10px;
+}
+main .form-group input::-moz-placeholder {
+  font-weight: bold;
+  font-size: 32px;
+  color: hsl(0, 1%, 50%);
+}
+main .form-group input::placeholder {
+  font-weight: bold;
+  font-size: 32px;
+  color: hsl(0, 1%, 50%);
+}
+main .form-group input.error {
+  border: 0.5px solid hsl(0, 100%, 67%);
+}
+@media (max-width: 500px) {
+  main .form-group input {
+    max-width: 70px;
+    padding: 10px;
+  }
+  main .form-group input::-moz-placeholder {
+    font-size: 18px;
+  }
+  main .form-group input::placeholder {
+    font-size: 18px;
+  }
+}
+main button {
+  border-radius: 50%;
+  border: none;
+}
+main button svg {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  padding: 10px;
+}
+main button svg path {
+  fill: hsl(259, 100%, 65%);
+}
+
+.msg {
+  color: hsl(0, 100%, 67%);
+  margin: 5px 10px;
+}
+
+p span {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 80px;
+  color: hsl(0, 0%, 8%);
+}
+p span#months, p span#days, p span#years {
+  color: hsl(259, 100%, 65%);
+}
+@media (max-width: 500px) {
+  p span {
+    font-size: 40px;
+  }
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.divider {
+  width: 90%;
+  height: 1px;
+  background-color: hsl(0, 0%, 86%);
+  margin: 20px 10px;
+  margin-right: 0;
+}/*# sourceMappingURL=style.css.map */
